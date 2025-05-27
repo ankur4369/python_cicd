@@ -14,8 +14,5 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: pip install pytest
-
     - name: Run PyTest
       run: pytest hello1.py
