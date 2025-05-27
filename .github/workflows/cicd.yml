@@ -15,9 +15,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pytest
+      run: pip install pytest
 
     - name: Run PyTest
       run: pytest hello1.py
